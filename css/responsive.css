@@ -1,0 +1,256 @@
+/* ========================================= */
+/* Responsive CSS */
+/* ========================================= */
+
+/* Tablet */
+@media screen and (max-width:992px){
+
+    .sidebar{
+        width:220px;
+    }
+
+    .main-content{
+        margin-left:220px;
+        width:calc(100% - 220px);
+        padding:30px;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        gap:40px;
+    }
+
+    .hero-left,
+    .hero-right{
+        width:100%;
+    }
+
+    .about-container,
+    .contact-container{
+        flex-direction:column;
+    }
+
+    .about-left,
+    .about-right,
+    .contact-info,
+    .contact-form{
+        width:100%;
+    }
+
+    .skills-container,
+    .projects-container,
+    .notes-container,
+    .profiles-container,
+    .achievement-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media screen and (max-width:768px){
+
+*{
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+.sidebar{
+    display:none;
+}
+
+.main-content{
+    margin-left:0 !important;
+    width:100% !important;
+    padding:20px !important;
+}
+
+section{
+    padding:60px 15px;
+}
+
+.hero{
+    display:flex;
+    flex-direction:column-reverse;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    gap:30px;
+    min-height:auto;
+}
+
+.hero-left,
+.hero-right{
+    width:100%;
+}
+
+.hero h1{
+    font-size:38px;
+    line-height:48px;
+}
+
+.hero h3{
+    font-size:24px;
+}
+
+.hero p{
+    width:100%;
+    font-size:16px;
+    line-height:28px;
+}
+
+.hero-btn{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.btn1,
+.btn2{
+    width:100%;
+}
+
+.profile-box{
+    width:230px;
+    height:230px;
+}
+
+.profile-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.about-container,
+.contact-container{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.about-grid{
+    grid-template-columns:1fr;
+}
+
+.skills-container,
+.projects-container,
+.notes-container,
+.profiles-container,
+.achievement-container{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:1fr;
+}
+
+.timeline::before{
+    display:none;
+}
+
+.timeline-item{
+    width:100%;
+    padding:0;
+}
+
+.timeline-content{
+    width:100%;
+}
+
+.project-btn{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.project-btn a{
+    width:100%;
+    text-align:center;
+}
+
+.note-btn{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.note-btn a{
+    width:100%;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button{
+    width:100%;
+}
+
+.social{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.social-contact{
+    justify-content:center;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.theme-toggle{
+    top:20px;
+    right:20px;
+}
+
+.chat-window{
+    width:95%;
+    right:2.5%;
+    bottom:90px;
+}
+
+#topBtn{
+    right:15px;
+    bottom:15px;
+}
+
+}
+
+
+/* Small Phones */
+
+@media screen and (max-width:480px){
+
+.hero h1{
+    font-size:30px;
+}
+
+.hero h3{
+    font-size:20px;
+}
+
+.section-title h2{
+    font-size:28px;
+}
+
+.profile-box{
+    width:180px;
+    height:180px;
+}
+
+}
