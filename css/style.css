@@ -2446,3 +2446,105 @@ body.light-mode .contact-form textarea{
 }
 
 }
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width:768px){
+
+    html,body{
+        overflow-x:hidden;
+        width:100%;
+    }
+
+    .main-content{
+        margin-left:0;
+        width:100%;
+        padding:20px;
+    }
+
+    .sidebar{
+        display:none;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:30px 10px;
+        min-height:auto;
+        gap:30px;
+    }
+
+    .hero-left,
+    .hero-right{
+        width:100%;
+    }
+
+    .hero h1{
+        font-size:42px;
+        line-height:52px;
+    }
+
+    .hero p{
+        max-width:100%;
+        line-height:28px;
+    }
+
+    .profile-box{
+        width:250px;
+        height:250px;
+    }
+
+    .about-container{
+        flex-direction:column;
+    }
+
+    .about-left img{
+        width:250px;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stats{
+        grid-template-columns:1fr;
+    }
+
+    .skills-container,
+    .projects-container,
+    .achievement-container,
+    .certificate-container,
+    .profiles-container,
+    .notes-container{
+        grid-template-columns:1fr;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+
+    .btn1,
+    .btn2{
+        display:block;
+        width:100%;
+        margin:10px 0;
+    }
+
+    .theme-toggle{
+        top:15px;
+        right:15px;
+    }
+
+    .chat-window{
+        width:95%;
+        right:2.5%;
+    }
+
+    .project-btn{
+        flex-direction:column;
+    }
+
+    .project-btn a{
+        width:100%;
+    }
+
+}
