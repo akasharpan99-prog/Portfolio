@@ -1,0 +1,481 @@
+/* ==========================================
+   LARGE LAPTOPS (1200px and below)
+========================================== */
+@media (max-width:1200px){
+
+    .navbar,
+    .hero{
+        width:90%;
+    }
+
+    .hero h1{
+        font-size:56px;
+    }
+
+    .image-box{
+        width:360px;
+        height:360px;
+    }
+
+}
+
+/* ==========================================
+   TABLETS (992px and below)
+========================================== */
+
+@media (max-width:992px){
+
+    .hero{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+        gap:50px;
+
+        padding-top:140px;
+
+    }
+
+    .hero-left{
+
+        order:2;
+
+    }
+
+    .hero-right{
+
+        order:1;
+
+    }
+
+    .hero p{
+
+        margin:auto;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .social{
+
+        justify-content:center;
+
+    }
+
+}
+
+/* ==========================================
+   MOBILE (768px and below)
+========================================== */
+
+@media (max-width:768px){
+
+    .navbar{
+
+        height:75px;
+
+    }
+
+    /* Mobile Navigation */
+
+    .nav-links{
+
+        position:fixed;
+
+        top:75px;
+
+        left:-100%;
+
+        width:100%;
+
+        height:calc(100vh - 75px);
+
+        background:#050816;
+
+        flex-direction:column;
+
+        justify-content:center;
+
+        align-items:center;
+
+        gap:35px;
+
+        transition:.4s;
+
+    }
+
+    .nav-links.active{
+
+        left:0;
+
+    }
+
+    #menuBtn{
+
+        display:flex;
+
+        justify-content:center;
+
+        align-items:center;
+
+    }
+
+    .hero{
+
+        padding-top:120px;
+
+    }
+
+    .hero h1{
+
+        font-size:42px;
+
+    }
+
+    .hero h2{
+
+        font-size:24px;
+
+    }
+
+    .hero p{
+
+        font-size:16px;
+
+    }
+
+    .image-box{
+
+        width:280px;
+
+        height:280px;
+
+    }
+
+}
+
+/* ==========================================
+   SMALL PHONES (576px and below)
+========================================== */
+
+@media (max-width:576px){
+
+    .navbar{
+
+        padding:0 18px;
+
+    }
+
+    .logo a{
+
+        font-size:24px;
+
+    }
+
+    .hero{
+
+        width:92%;
+
+        padding-top:110px;
+
+        gap:35px;
+
+    }
+
+    .tag{
+
+        font-size:14px;
+
+        padding:8px 16px;
+
+    }
+
+    .hero h1{
+
+        font-size:34px;
+
+    }
+
+    .hero h2{
+
+        font-size:20px;
+
+    }
+
+    .hero p{
+
+        font-size:15px;
+
+        line-height:1.8;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+        max-width:280px;
+
+        text-align:center;
+
+    }
+
+    .social{
+
+        gap:15px;
+
+    }
+
+    .social a{
+
+        width:45px;
+
+        height:45px;
+
+    }
+
+    .image-box{
+
+        width:240px;
+
+        height:240px;
+
+    }
+
+}
+
+/* ==========================================
+   EXTRA SMALL DEVICES (360px and below)
+========================================== */
+
+@media (max-width:360px){
+
+    .hero h1{
+
+        font-size:28px;
+
+    }
+
+    .hero h2{
+
+        font-size:18px;
+
+    }
+
+    .hero p{
+
+        font-size:14px;
+
+    }
+
+    .image-box{
+
+        width:200px;
+
+        height:200px;
+
+    }
+
+}
+/* About Responsive */
+
+@media(max-width:900px){
+
+.about-wrapper{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.about-image{
+
+max-width:320px;
+
+margin:auto;
+
+}
+
+.about-info{
+
+grid-template-columns:1fr;
+
+}
+
+.stats{
+
+grid-template-columns:1fr;
+
+}
+
+}
+@media(max-width:768px){
+
+.skills-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.skill-card{
+
+padding:25px;
+
+}
+
+}
+@media(max-width:768px){
+
+.project-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.project-btns{
+
+flex-direction:column;
+
+}
+
+.project-btns .btn{
+
+width:100%;
+
+}
+
+}
+@media(max-width:768px){
+
+.timeline{
+
+padding-left:20px;
+
+}
+
+.timeline-dot{
+
+left:-31px;
+
+}
+
+.timeline-content{
+
+padding:20px;
+
+}
+
+}
+@media(max-width:768px){
+
+.experience-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.experience-card{
+
+padding:25px;
+
+}
+
+}
+@media(max-width:768px){
+
+.certificate-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.certificate-card{
+
+padding:25px;
+
+}
+
+.certificate-buttons{
+
+flex-direction:column;
+
+}
+
+.certificate-buttons .btn{
+
+width:100%;
+
+}
+
+}
+@media(max-width:768px){
+
+.achievement-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.achievement-card{
+
+padding:25px;
+
+}
+
+}
+@media(max-width:768px){
+
+.coding-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.coding-card{
+
+padding:25px;
+
+}
+
+}
+@media(max-width:768px){
+
+.contact-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+.contact-form{
+
+margin-top:20px;
+
+}
+
+.contact-card{
+
+padding:18px;
+
+}
+
+.contact-social{
+
+justify-content:center;
+
+}
+
+}
